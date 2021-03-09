@@ -1,0 +1,121 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/* start for navar */
+/* end for navar */
+
+/* start for banner */
+#banner .banner{
+	background-image: url('../img/banner.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+#banner .shop_button{
+	padding: 10px 20px 10px 20px;
+	background: #efefef;
+	color: black;
+}
+#banner .banner{
+	position: relative;
+}
+#banner .banner_text{
+	position: absolute;
+	top: 30%;
+	left: 52%;
+}
+#banner .banner_text p{
+	font-size: 22px;
+}
+@media (max-width: 900px){
+	#banner .banner_text{
+		position: absolute;
+		top: 5%;
+		left: 52%;
+	}
+	#banner .shop_button{
+		padding: 5px 10px 5px 10px;
+	}
+}
+/* end for banner */
+
+/* start for showcase  */
+.showcase{
+	margin-top: 50px;
+}
+/* end for showcase  */
+
+/* start for new arrivals */
+#arrivals .arrivalsDetails{
+	background: #efefef;
+	text-align: center;
+	padding: 10px;
+	color: #888585;
+}
+#arrivals .arrivalsDetails .cutprice{
+	text-decoration: line-through;
+}
+#arrivals h1{
+	color: #888585;
+	margin-top: 20px;
+}
+/* end for new arrivals */
+
+/* start for add */
+#add{
+	background-color: #999999;
+	color: #efefef;
+	height: 150px;
+	margin-top: 40px;
+}
+#add .add{
+	text-align: center;
+	padding-top: 50px;
+}
+/* end for add */
+
+/* start for product details */
+#productDetails{
+	margin-top: 40px;
+}
+#productDetails .twoside{
+	display: flex;
+}
+/* end for product details */
+
+/* start for article */
+#articles{
+	margin-top: 40px;
+}
+#articles .arbgcolor{
+	background-color: #efefef;
+	padding: 10px;
+}
+#articles .arbgcolor button{
+	border: 0px solid black;
+	background-color: #cccccc;
+	padding: 5px;
+}
+#articles .arbgcolor a{
+	color: black;
+}
+/* end for article */
+
+/* start for footer */
+footer{
+	background-color: black;
+	color: #efefef;
+}
+footer ul li{
+	margin-left: 20px;
+}
+footer .input{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+/* end for footer  */
