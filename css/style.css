@@ -30,16 +30,6 @@
 #banner .banner_text p{
 	font-size: 22px;
 }
-@media (max-width: 900px){
-	#banner .banner_text{
-		position: absolute;
-		top: 5%;
-		left: 52%;
-	}
-	#banner .shop_button{
-		padding: 5px 10px 5px 10px;
-	}
-}
 /* end for banner */
 
 /* start for showcase  */
@@ -116,6 +106,5 @@ footer .input{
 	display: flex;
 	flex-wrap: wrap;
 }
-
 
 /* end for footer  */
