@@ -14,6 +14,7 @@
 	background-size: cover;
 	height: 100vh;
 	object-fit: cover;
+	max-width: 100%;
 }
 #banner .shop_button{
 	padding: 10px 20px 10px 20px;
@@ -28,8 +29,16 @@
 	top: 30%;
 	left: 52%;
 }
+#banner .banner_text a{
+	font-size: 12px;
+}
 #banner .banner_text p{
-	font-size: 22px;
+	font-size: 18px;
+}
+@media (max-width: 550px){
+	#banner .banner_text a{
+		font-size: 10px;
+	}
 }
 /* end for banner */
 
