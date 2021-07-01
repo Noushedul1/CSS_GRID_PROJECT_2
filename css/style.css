@@ -7,61 +7,69 @@
 /* end for navar */
 
 /* start for banner */
-#banner .banner{
+.banner{
 	background-image: url('../img/banner.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	height: 100vh;
 	object-fit: cover;
-	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
-#banner .shop_button{
-	padding: 10px 20px 10px 20px;
-	background: #efefef;
-	color: black;
+.banner a{
+	background-color: black;
+	padding: 10px;
+	color: #ccc;
+	text-decoration: none;
 }
-#banner .banner{
-	position: relative;
-}
-#banner .banner_text{
-	position: absolute;
-	top: 30%;
-	left: 52%;
-}
-#banner .banner_text a{
-	font-size: 12px;
-}
-#banner .banner_text p{
-	font-size: 18px;
-}
-@media (max-width: 550px){
-	#banner .banner_text a{
-		font-size: 10px;
-	}
+.banner h1,
+.banner p{
+	color: white;
 }
 /* end for banner */
 
 /* start for showcase  */
 .showcase{
 	margin-top: 50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 20px;
+}
+.showcase img{
+	height: 100%;
+	width: 100%;
 }
 /* end for showcase  */
 
 /* start for new arrivals */
-#arrivals .arrivalsDetails{
+.arrivalsDetails{
 	background: #efefef;
 	text-align: center;
 	padding: 10px;
 	color: #888585;
+	/*display: inline-block;*/
 }
-#arrivals .arrivalsDetails .cutprice{
+.arraivals{
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+}
+.arrivals img{
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+/*#arrivals .arrivalsDetails .cutprice{
 	text-decoration: line-through;
 }
 #arrivals h1{
 	color: #888585;
 	margin-top: 20px;
-}
+}*/
 /* end for new arrivals */
 
 /* start for add */
@@ -87,6 +95,11 @@
 /* end for product details */
 
 /* start for article */
+.articals{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+}
 #articles{
 	margin-top: 40px;
 }
@@ -120,3 +133,36 @@ footer .input{
 }
 
 /* end for footer  */
+
+@media (max-width: 800px){
+	/*start for arraivals*/
+	.arraivals{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	/*end for arraivals*/
+
+	/*start for articals*/
+	.articals{
+	grid-template-columns: repeat(2, 1fr);
+	}
+	/*end fro articals*/
+}
+@media (max-width: 500px){
+	/*start for arraivals*/
+	.arraivals{
+		grid-template-columns: 1fr;
+	}
+	.arraivals img{
+		width: 100%;
+	}
+	/*end for arraivals*/
+	/*start for articals*/
+	.articals{
+	grid-template-columns: 1fr;
+	}
+	.articals img{
+		width: 100%;
+	}
+	/*end fro articals*/
+
+}
